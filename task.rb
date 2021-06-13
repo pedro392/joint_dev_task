@@ -5,8 +5,8 @@ def q1
   names = ["田中", "佐藤", "佐々木", "高橋"]
 
   # 以下に回答を記載
-  names[4] = "斎藤"
- puts names
+  names.push ("斎藤")
+  print names
 
 end
 
@@ -15,9 +15,7 @@ def q2
   array2 = ["bird", "bat", "tiger"]
 
   # 以下に回答を記載
-  array1 .push(array2)
- array1.flatten!
- p array1
+ p array1+array2
 
 end
 
@@ -33,6 +31,7 @@ def q4
   sports = ["サッカー", "フットサル", nil, "野球", "バスケ", nil, "バレー"]
 
   # 以下に回答を記載
+  newary = sports.compact!
 
   # 以下は変更しないで下さい
   p sports
@@ -43,6 +42,8 @@ def q5
   array2 = [1, 5, 8, 10]
 
   # 以下に回答を記載
+  p array1.empty?
+  p array2.empty?
 
 end
 
