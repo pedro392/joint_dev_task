@@ -154,6 +154,9 @@ def q16
   ]
 
   # 以下に回答を記載
+  users.each do |profile|
+    p "私の名前は#{profile[:name]}です。年齢は#{profile[:age]}歳です。"
+  end
 
 end
 
